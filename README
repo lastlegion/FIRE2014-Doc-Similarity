@@ -1,0 +1,32 @@
+Document Similarity Amid Automatically Detected Terms
+Forum for Information Retrieval Evaluation (FIRE), 2014
+
+Version 1.0 --- 12 August 2014
+
+BACKGROUND
+
+This archive contains data for the "Document Similarity Amid
+Automatically Detected Terms" task at FIRE 2014. Redistribution
+without organizers permission is prohibited.
+
+CONTENTS
+
+There are two subfolders to this archive: queries and
+responses. Queries contain test and training sets; whether training is
+popularized depends on the version of this archive.
+
+Documents are CSV files with the following format:
+
+  psuedo-term,start,end
+
+Psuedo-terms are regions of speech that appear throughout the
+corpus. Other documents may have similar psuedo-terms if regions were
+deemed to be similar in the audio space. The start and end regions
+mark where a given term appeared within an audio file. While
+psuedo-term itself is not necessarily unique, the
+(psuedo-term,start,end) generally is.
+
+AUTHORS
+
+Jerome White (jerome.white@in.ibm.com)
+Hardik Joshi (hardikjjoshi@gmail.com)
