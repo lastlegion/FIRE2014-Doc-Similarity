@@ -59,15 +59,15 @@ for qfile in qfiles:
 		#Calculate score for this response
 		score = 0
 		for qterm in query:
-			min_difference = 10000000000000
+			#min_difference = 10000000000000
 			for rterm in response:
 
 				
 				difference = math.sqrt(((qterm) - (rterm))**2)
 				
-				if(difference < min_difference):
-					min_difference = difference
-			score = score+min_difference
+				#if(difference < min_difference):
+					#min_difference = difference
+			score = score+difference
 		scores[response_file] = score
 	sorted_scores = sorted(scores.items(), key=operator.itemgetter(1))
 
