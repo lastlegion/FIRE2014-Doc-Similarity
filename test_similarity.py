@@ -71,7 +71,7 @@ for qfile in qfiles:
 		scores[response_file] = score
 	sorted_scores = sorted(scores.items(), key=operator.itemgetter(1))
 
-	for i in range(0,200):
+	for i in range(0,1000):
 		qres = sorted_scores[i][0][len(sorted_scores[i][0])-4:len(sorted_scores[i][0])];
 		#print qrel_res[qname]
 		for res_f in qrel_res[qname]:
