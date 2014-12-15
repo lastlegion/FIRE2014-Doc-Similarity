@@ -21,7 +21,7 @@ with open(qrel_file) as f:
 			qrel_res[l[0]].append(l[2])
 			rel_docs[l[0]]=rel_docs[l[0]]+1;
 
-qpath = 'queries/train/*'
+qpath = 'queries/test/*'
 qfiles = glob.glob(qpath)
 
 rpath = 'responses/*'

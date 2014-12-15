@@ -68,7 +68,7 @@ for qfile in qfiles:
 					min_difference = difference
 				#print min_difference
 			score = score+min_difference
-		scores[response_file]=  score/len(query)
+		scores[response_file]=  score#/len(query)
 	sorted_scores = sorted(scores.items(), key=operator.itemgetter(1))
 
 	R=0
